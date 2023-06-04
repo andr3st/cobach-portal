@@ -1,0 +1,24 @@
+:root{
+  --white-color: #FFFF;
+  --blue-color: #615DEC;
+  --grey-color: #8D8D98;
+  --grey-color-light: #aaa;
+  --gray-color: #F7F7F8;
+}
+.content{
+    background-color: var(--gray-color);
+}
+
+.content .info{
+  margin-left: 100px;
+}
+
+#docentesTable {
+  border: 1px solid black;
+}
+
+#docentesTable th,
+#docentesTable td {
+  border: 1px solid black;
+  padding: 8px;
+}
