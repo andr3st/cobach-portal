@@ -1,9 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&family=Work+Sans:wght@300&display=swap');
+/* NUEVO */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif light;
+  font-family: 'Work Sans', sans-serif;   /* NUEVO */
 }
 :root {
   --white-color: #FFFF;
@@ -38,26 +40,36 @@ header img {
   width: 70px;
 }
 
+.contenedor {
+  display: flex; /* Hace que los hijos del contenedor (el menú y el contenido) se dispogan en línea */
+}
+
 
 
 /* sidebar */
 .sidebar {
   background-color: var(--white-color);
-  width: 220px;
+  width: 250px; /* el menú ocupará menos espacio cuando esté contraído */
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  padding: 10px 20px;
+  padding: 60px 0;
   z-index: 100;
   overflow-y: scroll;
   box-shadow: 0 0 1px var(--grey-color-light);
   transition: all 0.5s ease;
 }
+
 .sidebar.close {
   padding: 60px 0;
-  width: 80px;
+  width: 80px; /* el menú  ocupará menos espacio cuando esté contraído */
 }
+
+.content {
+  width: 100%; /* El contenido llenará todo el espacio restante */
+}
+
 .sidebar::-webkit-scrollbar {
   display: none;
 }

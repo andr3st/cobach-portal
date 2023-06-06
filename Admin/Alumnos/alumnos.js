@@ -104,3 +104,17 @@ async function consumirDatos() {
 
 
 }
+
+var sidebar = document.querySelector('.sidebar');
+var content = document.querySelector('.content');
+
+sidebar.addEventListener('transitionend', function () {
+  // Comprobar si el menú lateral está expandido:
+  if (sidebar.classList.contains('close')) {
+    // Si el menú lateral está contraído, mover el contenido principal a la izquierda:
+    content.style.marginLeft = '80px';
+  } else {
+    // Si el menú lateral está expandido, mover el contenido principal hacia la derecha:
+    content.style.marginLeft = '250px';
+  }
+});
