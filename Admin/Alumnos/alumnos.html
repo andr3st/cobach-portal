@@ -14,8 +14,10 @@
 
   <!-- Header -->
   <header id="header">
-    <h1>COBACH</h1>
-    <img src="/logins/images/logo.png" alt="cobach">
+    <h1 class="letra-cobach">COBACH</h1>
+    <div>
+      <img class='logo-cobach' src="/logins/images/logo.png" alt="cobach">
+    </div>
   </header>
   
 
@@ -29,131 +31,135 @@
 
   <a href=""></a>
 
-  <nav class="sidebar" id="menuA">
-    <div class="menu_content">
-      <ul class="menu_items">
-        <div class="menu_title menu_cobach">
-          <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="menu_title menu_dahsboard"></div>
-
-        <li class="item">
-          <div id="principal-link" class="nav_link submenu_item">
-            <span class="navlink_icon">
-              <i class="fa-solid fa-house"></i>
-            </span>
-            <span class="navlink">Principal</span>
-            <i class="bx bx-chevron-right arrow-left"></i>
+  <div class="contenedor">
+    <nav class="sidebar hoverable" id="menuA">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_cobach">
+            <i class="fa-solid fa-user"></i>
           </div>
-        </li>
+          <div class="menu_title menu_dahsboard"></div>
 
-        <li class="item">
-          <div id="alumnos-link" class="nav_link submenu_item">
-            <span class="navlink_icon">
-              <i class="fa-solid fa-school"></i>
-            </span>
-            <span class="navlink">Alumnos</span>
+          <li class="item">
+            <div id="principal-link" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-house"></i>
+              </span>
+              <span class="navlink">Principal</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+          </li>
+
+          <li class="item">
+            <div id="alumnos-link" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-school"></i>
+              </span>
+              <span class="navlink">Alumnos</span>
+            </div>
+          </li>
+          <li class="item">
+            <div id="docentes-link" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-person-chalkboard"></i>
+              </span>
+              <span class="navlink">Docentes</span>
+            </div>
+          </li>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- End -->
+
+          <li class="item">
+            <div id="fechasPagos-link" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-calendar-days"></i>
+              </span>
+              <span class="navlink">Fechas y pagos</span>
+            </a>
+          </li>
+        <ul class="menu_items">
+          <div class="menu_title menu_setting"></div>
+          <li class="item">
+            <div id="directorio-link" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-address-book"></i>
+              </span>
+              <span class="navlink">Directorio</span>
+            </a>
+          </li>
+
+          <li class="item">
+            <div id="salir-link" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-door-open"></i>
+              </span>
+              <span class="navlink">Salir</span>
+              <i class="bx bx-chevron-left arrow-left"></i>
+            </a>
+          </li>
+        </ul>
+
+        
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expandir</span>
+            <i class='bx bx-log-in' ></i>
           </div>
-        </li>
-        <li class="item">
-          <div id="docentes-link" class="nav_link submenu_item">
-            <span class="navlink_icon">
-              <i class="fa-solid fa-person-chalkboard"></i>
-            </span>
-            <span class="navlink">Docentes</span>
+          <div class="bottom collapse_sidebar">
+            <span> Cerrar</span>
+            <i class='bx bx-log-out'></i>
           </div>
-        </li>
-      </ul>
-      <ul class="menu_items">
-        <div class="menu_title menu_editor"></div>
-        <!-- End -->
-
-        <li class="item">
-          <div id="fechasPagos-link" class="nav_link submenu_item">
-            <span class="navlink_icon">
-              <i class="fa-solid fa-calendar-days"></i>
-            </span>
-            <span class="navlink">Fechas y pagos</span>
-          </a>
-        </li>
-      <ul class="menu_items">
-        <div class="menu_title menu_setting"></div>
-        <li class="item">
-          <div id="directorio-link" class="nav_link submenu_item">
-            <span class="navlink_icon">
-              <i class="fa-solid fa-address-book"></i>
-            </span>
-            <span class="navlink">Directorio</span>
-          </a>
-        </li>
-
-        <li class="item">
-          <div id="salir-link" class="nav_link submenu_item">
-            <span class="navlink_icon">
-              <i class="fa-solid fa-door-open"></i>
-            </span>
-            <span class="navlink">Salir</span>
-            <i class="bx bx-chevron-left arrow-left"></i>
-          </a>
-        </li>
-      </ul>
-
-      
-      <div class="bottom_content">
-        <div class="bottom expand_sidebar">
-          <span> Expandir</span>
-          <i class='bx bx-log-in' ></i>
-        </div>
-        <div class="bottom collapse_sidebar">
-          <span> Cerrar</span>
-          <i class='bx bx-log-out'></i>
         </div>
       </div>
-    </div>
-  </nav>
-
+    </nav>
+  </div>
   <!-- Fin Menú -->
 
   <div class="content">
     <div class="info">
-      <h1>ALUMNOS</h1>
+      <h1>REGISTRO DE ALUMNOS<br><br></h1>
 
-      <h2>Ingresar nuevo alumno:</h2>
+      <h2>Ingresar nuevo alumno:<br><br></h2>
       <form id="form-env">
-        <label for="nombre">Expediente:</label>
-        <input type="text" id="Expediente" required placeholder="XXXX"><br><br>
-
-        <label for="Nombre">Nombre:</label>
-        <input type="text" id="Nombre" required placeholder="Nombre del alumno"><br><br>
-
-        <label for="Apellido">Apellido:</label>
-        <input type="text" id="Apellido" required placeholder="Apellidos del alumno"><br><br>
-
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" required placeholder="Correo del alumno"><br><br>
-
-        <label for="Semestre">Semestre:</label>
-        <select id="semestre" name="semestre" required>
-          <option value="opcion1">1</option>
-          <option value="opcion2">2</option>
-          <option value="opcion3">3</option>
-          <option value="opcion4">4</option>
-          <option value="opcion5">5</option>
-          <option value="opcion6">6</option>
-        </select><br><br>
-
-        <label for="Estatus">Estatus:</label>
-          <select id="Estatus" name="Estatus" required>
-            <option value="opcion1">Inscrito</option>
-            <option value="opcion2">No inscrito</option>
+        <div class="campos">
+          <label for="nombre">Expediente:</label>
+          <input type="text" id="Expediente" required placeholder="XXXX"><br><br>
+  
+          <label for="Nombre">Nombre:</label>
+          <input type="text" id="Nombre" required placeholder="Nombre del alumno"><br><br>
+  
+          <label for="Apellido">Apellido:</label>
+          <input type="text" id="Apellido" required placeholder="Apellidos del alumno"><br><br>
+  
+          <label for="correo">Correo:</label>
+          <input type="email" id="correo" required placeholder="Correo del alumno"><br><br>
+  
+          <label for="Semestre">Semestre:</label>
+          <select id="semestre" name="semestre" required>
+            <option value="opcion1">1</option>
+            <option value="opcion2">2</option>
+            <option value="opcion3">3</option>
+            <option value="opcion4">4</option>
+            <option value="opcion5">5</option>
+            <option value="opcion6">6</option>
           </select><br><br>
+  
+          <label for="Estatus">Estatus:</label>
+            <select id="Estatus" name="Estatus" required>
+              <option value="opcion1">Inscrito</option>
+              <option value="opcion2">No inscrito</option>
+            </select><br><br>
+  
+          <label for="pass">Contraseña:</label>
+          <input type="text" id="pass" required placeholder="********"><br><br>
+  
+          <button type="submit">Enviar</button>
+  
+          <a href="alumnos.html">Actualizar tabla</a>
+        </div>
 
-        <label for="pass">Contraseña:</label>
-        <input type="text" id="pass" required placeholder="********"><br><br>
-
-        <button type="submit">Enviar</button>
-
-        <a href="alumnos.html">Actualizar tabla</a>
       </form>
 
       <h2>Tabla alumnos</h2>
@@ -173,7 +179,7 @@
         <tbody></tbody>
       </table>
     </div>
-    </div>
+  </div>
 
     <script src="/Admin/Menu/menu.js"></script>
     <script src="alumnos.js" type="module"></script>

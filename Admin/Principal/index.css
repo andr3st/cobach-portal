@@ -17,6 +17,23 @@ body {
   
 }
 
+#header{
+  display: flex;       /* Establece el header como un contenedor flex */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.letra-cobach{
+  font-size: xx-large;
+  padding: 50px;
+  background-color: #615DEC;
+  background: linear-gradient(to right, #615DEC, black);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
+}
+
 
 /* sidebar */
 .sidebar {

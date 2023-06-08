@@ -39,13 +39,14 @@ submenuItems.forEach((item, index) => {
   });
 });
 
+sidebar.classList.add("close");
 
 
-if (window.innerWidth < 768) {
-  sidebar.classList.add("close");
-} else {
-  sidebar.classList.remove("close");
-}
+// if (window.innerWidth < 768) {
+//   sidebar.classList.add("close");
+// } else {
+//   sidebar.classList.remove("close");
+// }
 
 const principalLink = document.getElementById('principal-link');
 principalLink.addEventListener('click', () => {
@@ -77,3 +78,16 @@ salirLink.addEventListener('click', () => {
   window.location.href = '/logins/admin.html';
 });
 
+//*OCULTAR NAVBAR Y MOVER CONTENIDO DE LA PANTALLA
+var content = document.querySelector('.content');
+
+sidebar.addEventListener('transitionend', function () {
+  // Comprobar si el menú lateral está expandido:
+  if (sidebar.classList.contains('close')) {
+    // Si el menú lateral está contraído, mover el contenido principal a la izquierda:
+    content.style.marginLeft = '80px';
+  } else {
+    // Si el menú lateral está expandido, mover el contenido principal hacia la derecha:
+    content.style.marginLeft = '250px';
+  }
+});
