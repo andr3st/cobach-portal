@@ -13,14 +13,15 @@ document.getElementById('login-form').addEventListener('submit', function(event)
       const {data} = resultado;
   
       const datos = data.map(alumno => {
-        const {pass , user} = alumno.attributes;
-        return {user, pass}
+        const {pass , Expediente} = alumno.attributes;
+        return {Expediente, pass}
       })
       
-      answer = datos.filter(alumno => alumno.user == username && alumno.pass == password);
+      answer = datos.filter(alumno => alumno.Expediente == username && alumno.pass == password);
 
       if(answer.length > 0){
-        window.location.href = '/logins/admin.html';
+        localStorage.setItem('alumno', answer[0].Expediente);
+        window.location.href = '/Alumnos/Principal/principal.html';
       }else{
         alert('Credenciales inválidas. Por favor, verifica tu nombre de usuario y contraseña.');
       }

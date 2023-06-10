@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/20aba9cf20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Admin/Menu/menu.css">
-    <link rel="stylesheet" href="fechasPagos.css">
+    <link rel="stylesheet" href="/Admin/FechasPagos/fechasPagos.css">
 
 </head>
 <body>
@@ -117,6 +117,87 @@
 
   <!-- Fin Menú -->
 
+  <div class="content">
+    <div class="info">
+      <h2>Ingresar nomina a docente:</h2>
+      <form id="form-env">
+        <label for="Expediente">Expediente:</label>
+        <input type="text" id="Expediente" required placeholder="XXXX"><br><br>
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" required placeholder="Nombre del docente"><br><br>
+
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" required placeholder="Apellido del docente"><br><br>
+
+        <label for="Importe">Importe:</label>
+        <input type="text" id="Importe" required placeholder="$XXXX.00"><br><br>
+
+        <label for="Fecha">Fecha:</label>
+        <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
+
+        <button type="submit">Enviar</button>
+
+        <a href="/Admin/FechasPagos/fechasPagos.html">Actualizar tabla</a>
+      </form>
+
+      <h2>Tabla de nominas</h2>
+
+      <table id="nominaTable">
+        <thead>
+          <tr>
+            <th>Expediente</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Importe</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      
+      <!-- Fechas y pagos de alumnos -->
+
+      <h2>Ingresar pago a alumno:</h2>
+      <form id="form-envA">
+        <label for="Expediente">Expediente:</label>
+        <input type="text" id="ExpedienteA" required placeholder="XXXX"><br><br>
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="NombreA" required placeholder="Nombre del docente"><br><br>
+
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="ApellidoA" required placeholder="Apellido del docente"><br><br>
+
+        <label for="Importe">Importe:</label>
+        <input type="text" id="ImporteA" required placeholder="$XXXX.00"><br><br>
+
+        <label for="Fecha">Fecha:</label>
+        <input type="text" id="FechaA" required placeholder="DD/M/YYYY"><br><br>
+
+        <button type="submit">Enviar</button>
+
+        <a href="/Admin/FechasPagos/fechasPagos.html">Actualizar tabla</a>
+      </form>
+
+      <h2>Tabla de alumnos</h2>
+
+      <table id="pagoATable">
+        <thead>
+          <tr>
+            <th>Expediente</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Importe</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
   <script src="/Admin/Menu/menu.js"></script>
+  <script src="/Admin/FechasPagos/fechasPagos.js"></script>
 </body>
 </html>
