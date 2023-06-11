@@ -5,16 +5,16 @@
   box-sizing: border-box;
   font-family: sans-serif light;;
 }
-:root {
-  --white-color: #fff;
-  --violet-color: #615DEC;
-  --blue-color: #0052CC;
+
+:root{
+  --white-color: #FFFF;
+  --blue-color: #615DEC;
   --grey-color: #8D8D98;
-}
-body {
-  background-color: #e7f2fd;
-  transition: all 0.5s ease;
-  
+  --grey-color-light: #aaa;
+  --gray-color: #F7F7F8;
+  --purple-color: #BBBAF0;
+  --purple-light-color: #D6D6F6;
+  --pink-color: #F380F5;
 }
 
 #header{
@@ -25,8 +25,7 @@ body {
 
 .letra-cobach{
   font-size: xx-large;
-  padding: 50px;
-  background-color: #615DEC;
+  padding: 5px;
   background: linear-gradient(to right, #615DEC, black);
   -webkit-background-clip: text;
   color: transparent;
@@ -34,167 +33,169 @@ body {
   flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
 }
 
+body {
+  background-color: #e7f2fd;
+  transition: all 0.5s ease;
+  
+}
 
-/* sidebar */
-.sidebar {
-  background-color: var(--white-color);
-  width: 260px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 10px 20px;
-  z-index: 100;
-  overflow-y: scroll;
-  box-shadow: 0 0 1px var(--grey-color);
-  transition: all 0.5s ease;
+/* Inicio de contenido de carlitos */
+.landing-page {
+  text-align: center;
+  padding: 20px;
 }
+
+.announcement-board {
+  background-color: #615DEC;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.event-section {
+  margin-bottom: 20px;
+}
+
+.event {
+  background-color: #BBBAF0;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.event h3 {
+  margin-bottom: 5px;
+}
+/* Fin de contenido de carlitos */
+
+.content{
+  background-color: var(--gray-color);
+}
+
+.content .div-principal{
+background-color: var(--purple-color);
+
+}
+
+.div-principal {
+padding: 32px 0px 0px 40px;  
+color: rgb(255, 255, 255);
+}
+
+#form-env{
+padding: 8px;
+margin-bottom: 32px;
+color: black;
+}
+
+.campos {
+margin-right: 600px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+box-sizing: border-box;
+background-color: var(--purple-light-color);
+border-radius: 20px; /* Redondeado del contenedor morado */
+padding: 20px; /* Agregar esta línea para dar un poco de espacio entre el borde redondeado y el contenido del formulario */
+}
+
+.campos label {
+font-size: 1.2em;
+margin-bottom: 5px;
+}
+
+.campos input, .campos select {
+width: 50%;
+padding: 10px;
+box-sizing: border-box;
+font-size: 1em;
+border-radius: 100px;
+border: 1px solid #ccc;
+}
+
+.button-group {
+display: flex;
+justify-content: left;
+padding-right: 10px;
+}
+
+.button-group button,
+.button-group a.button {
+margin-right: 30px;
+}
+
+.button {
+padding: 10px 20px;
+font-size: 1em;
+color: #fff;
+background-color: var(--blue-color);
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+text-decoration: none;
+}
+
+.campos .button:hover {
+background-color: var(--pink-color);
+color: rgb(0, 0, 0);
+}
+
+.contenedor {
+display: flex; /* Hace que los hijos del contenedor (el menú y el contenido) se dispogan en línea */
+}
+
+.content {
+width: 100%; /* El contenido llenará todo el espacio restante */
+}
+
 .sidebar.close {
-  padding: 60px 0;
-  width: 80px;
+padding: 60px 0;
+width: 80px; /* el menú  ocupará menos espacio cuando esté contraído */
 }
-.sidebar::-webkit-scrollbar {
-  display: none;
+
+#form{
+padding: 100px;
 }
-.menu_content {
-  position: relative;
+
+/* Añade espacio alrededor de cada elemento .item */
+.item {
+margin: 10px 0;
 }
-.menu_title {
-  margin: 15px 0;
-  padding: 0 20px;
-  font-size: 18px;
+
+/* Añade espacio dentro de cada elemento .nav_link */
+.nav_link {
+padding: 10px 0;
 }
-.sidebar.close .menu_title {
-  padding: 6px 30px;
+
+.tabla-title{
+font-size: x-large;
 }
-.menu_title::before {
-  color: var(--grey-color);
-  white-space: nowrap;
-}
-.menu_titulo::before {
-    content: "COBACH";
-  }
-.menu_dahsboard::before {
-  content: "Menú Principal";
-}
-.menu_editor::before {
-  content: "Administración";
-}
-.menu_setting::before {
-  content: "Dirección";
-}
-.sidebar.close .menu_title::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 18px;
-  border-radius: 12px;
-  background: var(--grey-color-light);
-}
-.menu_items {
-  padding: 0;
-  list-style: none;
-}
-.navlink_icon {
-  position: relative;
-  font-size: 22px;
-  min-width: 50px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 6px;
-}
-.navlink_icon::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: calc(100% + 100px);
-  left: -20px;
-}
-.navlink_icon:hover {
-  background: var(--violet-color);
-}
-.sidebar .nav_link {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 4px 15px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--grey-color);
-  white-space: nowrap;
-}
-.sidebar.close .navlink {
-  display: none;
-}
-.nav_link:hover {
-  color: var(--white-color);
-  background: var(--violet-color);
-}
-.sidebar.close .nav_link:hover {
-  background: var(--white-color);
-}
-.submenu_item {
-  cursor: pointer;
-}
-.submenu {
-  display: none;
-}
-.submenu_item .arrow-left {
-  position: absolute;
-  right: 10px;
-  display: inline-block;
-  margin-right: auto;
-}
-.sidebar.close .submenu {
-  display: none;
-}
-.show_submenu ~ .submenu {
-  display: block;
-}
-.show_submenu .arrow-left {
-  transform: rotate(90deg);
-}
-.submenu .sublink {
-  padding: 15px 15px 15px 52px;
-}
-.bottom_content {
-  position: fixed;
-  bottom: 60px;
-  left: 0;
-  width: 260px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.bottom {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  left: 0;
-  justify-content: space-around;
-  padding: 18px 0;
-  text-align: center;
-  width: 100%;
-  color: var(--grey-color);
-  border-top: 1px solid var(--grey-color-light);
-  background-color: var(--white-color);
-}
-.bottom i {
-  font-size: 20px;
-}
-.bottom span {
-  font-size: 18px;
-}
-.sidebar.close .bottom_content {
-  width: 50px;
-  left: 15px;
-}
-.sidebar.close .bottom span {
-  display: none;
-}
-.sidebar.hoverable .collapse_sidebar {
-  display: none;
-}
-#sidebarOpen {
-  display: none;
+
+
+/* Añade espacio dentro de las celdas de la tabla */
+#alumnosTable th,
+#alumnosTable td {
+border: 1px solid black;
+padding: 16px; /* Cambia este valor para modificar el espacio dentro de las celdas */
+background-color: var(--blue-color);
 }

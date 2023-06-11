@@ -1,3 +1,14 @@
+:root{
+  --white-color: #FFFF;
+  --blue-color: #615DEC;
+  --grey-color: #8D8D98;
+  --grey-color-light: #aaa;
+  --gray-color: #F7F7F8;
+  --purple-color: #BBBAF0;
+  --purple-light-color: #D6D6F6;
+  --pink-color: #F380F5;
+}
+
 #header{
     display: flex;       /* Establece el header como un contenedor flex */
     justify-content: space-between;
@@ -6,11 +17,56 @@
 
   .letra-cobach{
     font-size: xx-large;
-    padding: 50px;
-    background-color: #615DEC;
+    padding: 5px;
     background: linear-gradient(to right, #615DEC, black);
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
     flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
   }
+
+  /* Inicio de carlitos */
+  .directory-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contact img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
+  }
+  
+  .contact img:hover {
+    transform: scale(1.3); /* Aumentamos el tamaño en un 10% (1.1 es el tamaño original multiplicado por 1.1) */
+  }
+  
+  
+  .contact-info h3 {
+    margin-bottom: 5px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  
+  
+  /* Final de carlitos */

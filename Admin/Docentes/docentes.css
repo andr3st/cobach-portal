@@ -4,31 +4,131 @@
   --grey-color: #8D8D98;
   --grey-color-light: #aaa;
   --gray-color: #F7F7F8;
+  --purple-color: #BBBAF0;
+  --purple-light-color: #D6D6F6;
+  --pink-color: #F380F5;
 }
+
+#header{
+  display: flex;       /* Establece el header como un contenedor flex */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.letra-cobach{
+  font-size: xx-large;
+  padding: 5px;
+  background-color: #615DEC;
+  background: linear-gradient(to right, #615DEC, black);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
+}
+
 .content{
     background-color: var(--gray-color);
 }
 
-.content .info{
-  margin-left: 100px;
+.content .div-principal{
+  background-color: var(--purple-color);
+  
 }
 
-#header{
-    display: flex;       /* Establece el header como un contenedor flex */
-    justify-content: space-between;
-    align-items: center;
-  }
+.div-principal {
+  padding: 32px 0px 0px 40px;  
+  color: rgb(255, 255, 255);
+}
 
-  .letra-cobach{
-    font-size: xx-large;
-    padding: 50px;
-    background-color: #615DEC;
-    background: linear-gradient(to right, #615DEC, black);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-align: center;
-    flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
-  }
+#form-env{
+  padding: 8px;
+  margin-bottom: 32px;
+  color: black;
+}
+
+.campos {
+  margin-right: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background-color: var(--purple-light-color);
+  border-radius: 20px; /* Redondeado del contenedor morado */
+  padding: 20px; /* Agregar esta línea para dar un poco de espacio entre el borde redondeado y el contenido del formulario */
+}
+
+.campos label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.campos input, .campos select {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1em;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: left;
+  padding-right: 10px;
+}
+
+.button-group button,
+.button-group a.button {
+  margin-right: 30px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.campos .button:hover {
+  background-color: var(--pink-color);
+  color: rgb(0, 0, 0);
+}
+
+.contenedor {
+  display: flex; /* Hace que los hijos del contenedor (el menú y el contenido) se dispogan en línea */
+}
+
+.content {
+  width: 100%; /* El contenido llenará todo el espacio restante */
+}
+
+.sidebar.close {
+padding: 60px 0;
+width: 80px; /* el menú  ocupará menos espacio cuando esté contraído */
+}
+
+#form{
+  padding: 100px;
+}
+
+/* Añade espacio alrededor de cada elemento .item */
+.item {
+  margin: 10px 0;
+}
+
+/* Añade espacio dentro de cada elemento .nav_link */
+.nav_link {
+  padding: 10px 0;
+}
+
+.tabla-title{
+  font-size: x-large;
+}
 
 #docentesTable {
   border: 1px solid black;
@@ -37,5 +137,6 @@
 #docentesTable th,
 #docentesTable td {
   border: 1px solid black;
-  padding: 8px;
+  padding: 16px; /* Cambia este valor para modificar el espacio dentro de las celdas */
+  background-color: var(--blue-color);
 }
