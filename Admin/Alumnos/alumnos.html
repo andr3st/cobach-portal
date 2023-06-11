@@ -6,7 +6,7 @@
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/20aba9cf20.js" crossorigin="anonymous"></script>
-  <title>Alumnos</title>
+  <title>Registro de alumnos</title>
   <link rel="stylesheet" href="/Admin/Menu/menu.css">
   <link rel="stylesheet" href="alumnos.css">
 </head>
@@ -118,10 +118,10 @@
   <!-- Fin Menú -->
 
   <div class="content">
-    <div class="info">
+    <div class="div-principal">
       <h1>REGISTRO DE ALUMNOS<br><br></h1>
-
       <h2>Ingresar nuevo alumno:<br><br></h2>
+
       <form id="form-env">
         <div class="campos">
           <label for="nombre">Expediente:</label>
@@ -154,15 +154,15 @@
   
           <label for="pass">Contraseña:</label>
           <input type="text" id="pass" required placeholder="********"><br><br>
-  
-          <button type="submit">Enviar</button>
-  
-          <a href="alumnos.html">Actualizar tabla</a>
-        </div>
 
+          <div class="button-group">
+            <button type="submit" class="button">Enviar</button>
+            <a href="alumnos.html" class="button">Actualizar tabla</a>
+          </div>
+        </div>
       </form>
 
-      <h2>Tabla alumnos</h2>
+      <h2 class="tabla-title">Tabla de alumnos<br><br></h2>
 
       <table id="alumnosTable">
         <thead>

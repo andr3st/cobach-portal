@@ -4,7 +4,28 @@
   --grey-color: #8D8D98;
   --grey-color-light: #aaa;
   --gray-color: #F7F7F8;
+  --purple-color: #BBBAF0;
+  --purple-light-color: #D6D6F6;
+  --pink-color: #F380F5;
 }
+
+#header{
+  display: flex;       /* Establece el header como un contenedor flex */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.letra-cobach{
+  font-size: xx-large;
+  padding: 5px;
+  background-color: #615DEC;
+  background: linear-gradient(to right, #615DEC, black);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
+}
+
 .content{
     background-color: var(--gray-color);
 }
@@ -13,22 +34,8 @@
   margin-left: 100px;
 }
 
-#header{
-    display: flex;       /* Establece el header como un contenedor flex */
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  .letra-cobach{
-    font-size: xx-large;
-    padding: 50px;
-    background-color: #615DEC;
-    background: linear-gradient(to right, #615DEC, black);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-align: center;
-    flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
-  }
+
 
 #nominaTable, #pagoATable {
   border: 1px solid black;
@@ -37,5 +44,7 @@
 #nominaTable th,
 #nominaTable td, #pagoATable th, #pagoATable td {
   border: 1px solid black;
-  padding: 8px;
+  padding: 16px;
+  background-color: var(--purple-color);
+
 }

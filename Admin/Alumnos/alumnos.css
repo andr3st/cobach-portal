@@ -4,48 +4,56 @@
       --grey-color: #8D8D98;
       --grey-color-light: #aaa;
       --gray-color: #F7F7F8;
+      --purple-color: #BBBAF0;
+      --purple-light-color: #D6D6F6;
+      --pink-color: #F380F5;
     }
+
+    #header{
+      display: flex;       /* Establece el header como un contenedor flex */
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .letra-cobach{
+      font-size: xx-large;
+      padding: 5px;
+      background: linear-gradient(to right, #615DEC, black);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-align: center;
+      flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
+    }
+
     .content{
         background-color: var(--gray-color);
     }
 
-    .content .info{
-      margin-left: 100px;
+    .content .div-principal{
+      background-color: var(--purple-color);
+      
   }
 
-  #header{
-    display: flex;       /* Establece el header como un contenedor flex */
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .letra-cobach{
-    font-size: xx-large;
-    padding: 50px;
-    background-color: #615DEC;
-    background: linear-gradient(to right, #615DEC, black);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-align: center;
-    flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
-  }
-
-  .info {
-    padding: 24px;  
+  .div-principal {
+    padding: 32px 0px 0px 40px;  
+    color: rgb(255, 255, 255);
   }
 
   #form-env{
     padding: 8px;
     margin-bottom: 32px;
+    color: black;
   }
 
   .campos {
+    margin-right: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 auto;
-    padding: 5px;
     box-sizing: border-box;
+    background-color: var(--purple-light-color);
+    border-radius: 20px; /* Redondeado del contenedor morado */
+    padding: 20px; /* Agregar esta línea para dar un poco de espacio entre el borde redondeado y el contenido del formulario */
   }
   
   .campos label {
@@ -54,37 +62,40 @@
   }
   
   .campos input, .campos select {
+    width: 50%;
     padding: 10px;
-    margin-bottom: 20px;
     box-sizing: border-box;
     font-size: 1em;
-    border-radius: 4px;
+    border-radius: 100px;
     border: 1px solid #ccc;
   }
   
-  .campos button {
+  .button-group {
+    display: flex;
+    justify-content: left;
+    padding-right: 10px;
+  }
+  
+  .button-group button,
+  .button-group a.button {
+    margin-right: 30px;
+  }
+  
+  .button {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #007BFF;
+    background-color: var(--blue-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .campos button:hover {
-    background-color: #0056b3;
-  }
-  
-  .campos a {
-    margin-top: 20px;
-    color: #007BFF;
     text-decoration: none;
   }
   
-  .campos a:hover {
-    text-decoration: underline;
+  .campos .button:hover {
+    background-color: var(--pink-color);
+    color: rgb(0, 0, 0);
   }
 
   .contenedor {
@@ -114,10 +125,16 @@
     padding: 10px 0;
   }
 
+  .tabla-title{
+    font-size: x-large;
+  }
+  
+
   /* Añade espacio dentro de las celdas de la tabla */
   #alumnosTable th,
   #alumnosTable td {
     border: 1px solid black;
     padding: 16px; /* Cambia este valor para modificar el espacio dentro de las celdas */
+    background-color: var(--blue-color);
   }
 
