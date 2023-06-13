@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+h2{
+  color: var(--blue-color);
+}
+
 .letra-cobach{
   font-size: xx-large;
   padding: 5px;
@@ -47,9 +51,9 @@
 }
 
 .campos {
-  margin-right: 600px;
+  margin-right: 900px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   box-sizing: border-box;
   background-color: var(--purple-light-color);

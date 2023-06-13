@@ -175,31 +175,40 @@
 <div class="content">
   <div class="info">
     <!-- Aviso -->
-    <h2>Registrar avisos para el alumnado</h2> <br>
-    <h2>Ingresar Aviso:</h2> <br>
+    <h1>Registrar avisos para el alumnado</h1> <br>
+    <h2>Ingresar aviso:</h2> <br>
       <form id="form-env">
-        <div class="campos">
 
-        <label for="Aviso">Aviso:</label>
-        <input type="text" id="Aviso" required placeholder="Aviso corto"><br><br>
+        <div class="contenedor-campos">
 
-        <label for="Descripcion">Descripcion:</label>
-        <input type="text" id="Descripcion" required placeholder="Descripcion amplia"><br><br>
+          <div class="campos">
 
-        <label for="Grupos">Grupos:</label>
-        <input type="text" id="Grupos" required placeholder=""><br><br>
+              <div>
+                <label for="Aviso">Aviso:</label>
+                <input type="text" id="Aviso" required placeholder="Aviso corto"><br><br>
 
-        <label for="Fecha">Fecha:</label>
-        <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
+                <label for="Descripcion">Descripcion:</label>
+                <input type="text" id="Descripcion" required placeholder="Descripcion amplia"><br><br>
+            </div>
 
-        <div class="button-group">
-          <button type="submit" class="button">Enviar</button>
-          <a href="/Admin/Principal/index.html#form-env" class="button">Actualizar datos</a>
+            <div>
+              <label for="Grupos">Grupos:</label>
+              <input type="text" id="Grupos" required placeholder="Número de grupo"><br><br>
+              <label for="Fecha">Fecha:</label>
+              <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
+            </div>
+
+
+          </div>
+
+              <div class="button-group">
+                <button type="submit" class="button">Enviar</button>
+                <a href="/Admin/Principal/index.html#form-env" class="button">Actualizar datos</a>
+              </div>
+
         </div>
 
-        
-        </div>
-        <h2>Avisos</h2>
+        <h1><br><br>Avisos<br><br></h1>
         <table id="avisosTable">
           <thead>
             <tr>
@@ -216,30 +225,39 @@
 
       <!-- Eventos -->
 
-      <h2>Registro de eventos de la escuela</h2> <br>
-      <h2>Ingresar Evento:</h2> <br>
+      <h1>Registro de eventos de la escuela</h1> <br>
+      <h2>Ingresar evento:</h2> <br>
       <form id="form-envE">
-        <div class="campos">
+        <div class="contenedor-campos">
 
-        <label for="Nombre">Nombre:</label>
-        <input type="text" id="NombreE" required placeholder="Nombre del evento"><br><br>
+          <div class="campos">
 
-        <label for="Descripcion">Descripcion:</label>
-        <input type="text" id="DescripcionE" required placeholder="Descripcion amplia"><br><br>
+              <div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" required placeholder="Nombre del evento"><br><br>
 
-        <label for="Lugar">Lugar:</label>
-        <input type="text" id="LugarE" required placeholder="Lugar"><br><br>
+                <label for="Descripcion">Descripcion:</label>
+                <input type="text" id="Descripcion" required placeholder="Descripcion amplia"><br><br>
+            </div>
 
-        <label for="Fecha">Fecha:</label>
-        <input type="text" id="FechaE" required placeholder="DD/M/YYYY"><br><br>
+            <div>
+              <label for="Grupos">Lugar:</label>
+              <input type="text" id="Lugar" required placeholder="Lugar"><br><br>
+              <label for="Fecha">Fecha:</label>
+              <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
+            </div>
 
-        <div class="button-group">
-          <button type="submit" class="button">Enviar</button>
-          <a href="/Admin/Principal/index.html#form-envE" class="button">Actualizar tabla</a>
+
+          </div>
+
+              <div class="button-group">
+                <button type="submit" class="button">Enviar</button>
+                <a href="/Admin/Principal/index.html#form-envE" class="button">Actualizar tabla</a>
+              </div>
+
         </div>
-        </div>
 
-        <h2>Eventos</h2>
+        <h1><br><br>Eventos<br><br></h1>
         <table id="eventosTable">
           <thead>
             <tr>

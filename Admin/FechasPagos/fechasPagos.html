@@ -118,30 +118,40 @@
   <!-- Fin Menú -->
 
   <div class="content">
-    <div class="info">
+    <div class="div-principal">
+      <h1>Pagos<br><br></h1>
       <h2>Ingresar nomina a docente:</h2>
       <form id="form-env">
-        <label for="Expediente">Expediente:</label>
-        <input type="text" id="Expediente" required placeholder="XXXX"><br><br>
+          <div class="campos">
+          <div>
+          <label for="Expediente">Expediente:</label>
+          <input type="text" id="Expediente" required placeholder="XXXX"><br><br>
 
-        <label for="Nombre">Nombre:</label>
-        <input type="text" id="Nombre" required placeholder="Nombre del docente"><br><br>
+          <label for="Nombre">Nombre:</label>
+          <input type="text" id="Nombre" required placeholder="Nombre del docente"><br><br>
 
-        <label for="Apellido">Apellido:</label>
-        <input type="text" id="Apellido" required placeholder="Apellido del docente"><br><br>
+          <label for="Apellido">Apellido:</label>
+          <input type="text" id="Apellido" required placeholder="Apellido del docente"><br><br>
+          </div>
+          
+          <div>
+          <label for="Importe">Importe:</label>
+          <input type="text" id="Importe" required placeholder="$XXXX.00"><br><br>
 
-        <label for="Importe">Importe:</label>
-        <input type="text" id="Importe" required placeholder="$XXXX.00"><br><br>
+          <label for="Fecha">Fecha:</label>
+          <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
 
-        <label for="Fecha">Fecha:</label>
-        <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
-
-        <button type="submit">Enviar</button>
-
-        <a href="/Admin/FechasPagos/fechasPagos.html">Actualizar tabla</a>
+          <div class="button-group">
+            <button type="submit" class="button">Enviar</button>
+          <a href="/Admin/FechasPagos/fechasPagos.html" class="button">Actualizar tabla</a>
+          </div>
+          </div>
+          
+        
       </form>
+      </div>
 
-      <h2>Tabla de nominas</h2>
+      <h2 class="tabla-title">Tabla de nominas</h2>
 
       <table id="nominaTable">
         <thead>
@@ -158,8 +168,10 @@
       
       <!-- Fechas y pagos de alumnos -->
 
-      <h2>Ingresar pago a alumno:</h2>
-      <form id="form-envA">
+      <h2>Ingresar pago alumno:</h2>
+      <form id="form-env">
+        <div class="campos">
+        <div>
         <label for="Expediente">Expediente:</label>
         <input type="text" id="ExpedienteA" required placeholder="XXXX"><br><br>
 
@@ -168,21 +180,25 @@
 
         <label for="Apellido">Apellido:</label>
         <input type="text" id="ApellidoA" required placeholder="Apellido del docente"><br><br>
-
+        </div>
+        <div>
         <label for="Importe">Importe:</label>
         <input type="text" id="ImporteA" required placeholder="$XXXX.00"><br><br>
 
         <label for="Fecha">Fecha:</label>
         <input type="text" id="FechaA" required placeholder="DD/M/YYYY"><br><br>
 
-        <button type="submit">Enviar</button>
-
-        <a href="/Admin/FechasPagos/fechasPagos.html">Actualizar tabla</a>
+        <div class="button-group">
+          <button type="submit" class="button">Enviar</button>
+        <a href="/Admin/FechasPagos/fechasPagos.html" class="button">Actualizar tabla</a>
+        </div>
+        </div>
+        </div>
       </form>
 
-      <h2>Tabla de alumnos</h2>
+      <h2 class="tabla-title">Tabla de alumnos</h2>
 
-      <table id="pagoATable">
+      <table id="nominaTable">
         <thead>
           <tr>
             <th>Expediente</th>
