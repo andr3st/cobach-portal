@@ -115,7 +115,7 @@
     </div>
   </nav>
 
-  <!-- Principal -->
+  <!-- Principal
   <div class="landing-page">
     <div class="announcement-board">
       <h2>¡Bienvenidos!</h2>
@@ -149,7 +149,7 @@
         <p>Fecha: 20 de julio</p>
       </div>
     </div>
-  </div>
+  </div> -->
   
 
 
@@ -158,26 +158,104 @@
   <div class="slider">
     <ul>
         <li>
-            <img src="/Admin/Principal/images/image1.jpg">
+            <img src="/Admin/Principal/images/image1.jpg" title="Gran involucramiento entre alumnos y profesores">
         </li>
         <li>
-            <img src="/Admin/Principal/images/image2.jpg">
+            <img src="/Admin/Principal/images/image2.jpg" title="Cultura del deporte">
         </li>
         <li>
-            <img src="/Admin/Principal/images/image3.jpg">
+            <img src="/Admin/Principal/images/image3.jpg" title="Participación del alumnado">
         </li>
         <li>
-            <img src="/Admin/Principal/images/image4.jpg">
+            <img src="/Admin/Principal/images/image4.jpg" title="Ambiente de respeto y solidaridad">
         </li>
     </ul>
 </div>
 
 <div class="content">
   <div class="info">
-    
+    <!-- Aviso -->
+    <h2>Registrar avisos para el alumnado</h2> <br>
+    <h2>Ingresar Aviso:</h2> <br>
+      <form id="form-env">
+        <div class="campos">
+
+        <label for="Aviso">Aviso:</label>
+        <input type="text" id="Aviso" required placeholder="Aviso corto"><br><br>
+
+        <label for="Descripcion">Descripcion:</label>
+        <input type="text" id="Descripcion" required placeholder="Descripcion amplia"><br><br>
+
+        <label for="Grupos">Grupos:</label>
+        <input type="text" id="Grupos" required placeholder=""><br><br>
+
+        <label for="Fecha">Fecha:</label>
+        <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
+
+        <div class="button-group">
+          <button type="submit" class="button">Enviar</button>
+          <a href="/Admin/Principal/index.html#form-env" class="button">Actualizar datos</a>
+        </div>
+
+        
+        </div>
+        <h2>Avisos</h2>
+        <table id="avisosTable">
+          <thead>
+            <tr>
+              <th>Aviso</th>
+              <th>Descripcion</th>
+              <th>Grupos</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </form>
+
+
+      <!-- Eventos -->
+
+      <h2>Registro de eventos de la escuela</h2> <br>
+      <h2>Ingresar Evento:</h2> <br>
+      <form id="form-envE">
+        <div class="campos">
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="NombreE" required placeholder="Nombre del evento"><br><br>
+
+        <label for="Descripcion">Descripcion:</label>
+        <input type="text" id="DescripcionE" required placeholder="Descripcion amplia"><br><br>
+
+        <label for="Lugar">Lugar:</label>
+        <input type="text" id="LugarE" required placeholder="Lugar"><br><br>
+
+        <label for="Fecha">Fecha:</label>
+        <input type="text" id="FechaE" required placeholder="DD/M/YYYY"><br><br>
+
+        <div class="button-group">
+          <button type="submit" class="button">Enviar</button>
+          <a href="/Admin/Principal/index.html#form-envE" class="button">Actualizar tabla</a>
+        </div>
+        </div>
+
+        <h2>Eventos</h2>
+        <table id="eventosTable">
+          <thead>
+            <tr>
+              <th>Evento</th>
+              <th>Descripcion</th>
+              <th>Lugar</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </form>
   </div>
 </div>
 
   <script src="/Admin/Menu/menu.js"></script>
+  <script src="/Admin/Principal/index.js"></script>
 </body>
 </html>

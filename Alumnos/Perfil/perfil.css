@@ -1,0 +1,40 @@
+:root{
+    --white-color: #FFFF;
+    --blue-color: #615DEC;
+    --grey-color: #8D8D98;
+    --grey-color-light: #aaa;
+    --gray-color: #F7F7F8;
+    --purple-color: #BBBAF0;
+    --purple-light-color: #D6D6F6;
+    --pink-color: #F380F5;
+  }
+
+  #header{
+    display: flex;       /* Establece el header como un contenedor flex */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .letra-cobach{
+    font-size: xx-large;
+    padding: 5px;
+    background: linear-gradient(to right, #615DEC, black);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    flex-grow: 1; /* Esto permitirá que el texto ocupe el espacio restante, centrando el texto */
+  }
+
+  .content{
+      background-color: var(--gray-color);
+  }
+
+ .content .info{
+    background-color: var(--purple-color);
+    
+}
+
+.info {
+  padding: 32px 0px 0px 40px;  
+  color: rgb(255, 255, 255);
+}
