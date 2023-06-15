@@ -60,7 +60,7 @@ body {
   flex-direction: column;
   padding: 1rem;
   margin-bottom: 3rem;   
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 #form-envE{
@@ -68,7 +68,7 @@ body {
   flex-direction: column;
   padding: 8px;
   margin-bottom: 32px;
-  color: rgb(255, 255, 255);
+  color: black;
   }
 
   .contenedor-campos {
