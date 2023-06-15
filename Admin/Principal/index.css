@@ -43,55 +43,6 @@ body {
   
 }
 
-/* Inicio de contenido de carlitos */
-/* .landing-page {
-  text-align: center;
-  padding: 20px;
-}
-
-.announcement-board {
-  background-color: #615DEC;
-  color: #FFFFFF;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.image-gallery {
-  margin-bottom: 20px;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.image-container img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.event-section {
-  margin-bottom: 20px;
-}
-
-.event {
-  background-color: #BBBAF0;
-  color: #FFFFFF;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.event h3 {
-  margin-bottom: 5px;
-} 
-*/
-/* Fin de contenido de carlitos */
-
 .content{ 
   background-color: var(--gray-color);
   width: 100%; /* El contenido llenará todo el espacio restante */
@@ -99,18 +50,26 @@ body {
 
 
 .info {
-padding: 32px 0px 0px 40px;  
-color: rgb(255, 255, 255);
-background-color: var(--purple-color);
+  padding: 6rem 0rem 0rem 7rem;  
+  color: rgb(255, 255, 255);
+  background-color: var(--purple-color);
 }
 
 #form-env{
-display: flex;
+display: block;
 flex-direction: column;
-padding: 8px;
-margin-bottom: 32px;
+padding: 1rem;
+margin-bottom: 3rem;   
 color: rgb(255, 255, 255);
 }
+
+#form-envE{
+  display: block;
+  flex-direction: column;
+  padding: 8px;
+  margin-bottom: 32px;
+  color: rgb(255, 255, 255);
+  }
 
 .contenedor-campos{
   display: flex;
@@ -122,15 +81,15 @@ color: rgb(255, 255, 255);
 }
 
 .campos {
-margin-right: 800px;
-margin-bottom: 30px;
+margin-right: 48rem;
+margin-bottom: 2rem;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
 box-sizing: border-box;
 background-color: var(--purple-light-color);
-border-radius: 20px; /* Redondeado del contenedor morado */
-padding: 20px; /* Agregar esta línea para dar un poco de espacio entre el borde redondeado y el contenido del formulario */
+border-radius: 2rem; /* Redondeado del contenedor morado */
+padding: 1rem; /* Agregar esta línea para dar un poco de espacio entre el borde redondeado y el contenido del formulario */
 }
 
 .campos label {
@@ -140,27 +99,27 @@ margin-bottom: 5px;
 
 .campos input, .campos select {
 width: 90%;
-padding: 10px;
+padding: 1rem;
 box-sizing: border-box;
 font-size: 1em;
-border-radius: 100px;
+border-radius: 10rem;
 border: 1px solid #ccc;
 }
 
 .button-group {
 display: flex;
 justify-content: left;
-padding-right: 10px;
+padding-right: 1rem;
 }
 
 .button-group button,
 .button-group a.button {
-margin-right: 30px;
+margin-right: 3rem;
 }
 
 .button {
-padding: 10px 20px;
-font-size: 1em;
+  padding: .5rem 1rem;
+  font-size: 1em;
 color: #fff;
 background-color: var(--blue-color);
 border: none;
@@ -185,14 +144,9 @@ padding: 60px 0;
 width: 80px; /* el menú  ocupará menos espacio cuando esté contraído */
 }
 
-#form{
-padding: 100px;
-}
 
-/* Añade espacio alrededor de cada elemento .item */
-.item {
-margin: 10px 0;
-}
+
+
 
 /* Añade espacio dentro de cada elemento .nav_link */
 .nav_link {
@@ -250,4 +204,36 @@ overflow: hidden;
   padding: 16px; /* Cambia este valor para modificar el espacio dentro de las celdas */
   background-color: var(--blue-color);
   color: white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .info {
+    padding: 4rem 0rem 0rem 4rem;
+  }
+  
+  .campos {
+    margin-right: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    padding: 3rem 0rem 0rem 3rem;
+  }
+  
+  .campos {
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    padding: 2rem 0rem 0rem 2rem;
+  }
+  
+  .campos {
+    margin-right: 5rem;
+  }
 }
