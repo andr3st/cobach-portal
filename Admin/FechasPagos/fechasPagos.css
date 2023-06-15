@@ -49,7 +49,7 @@ h2{
   #form-env {
     padding: 1rem;
     margin-bottom: 3rem;
-    color: black;
+    color: white;
   }
   
   .campos {
@@ -73,13 +73,13 @@ h2{
   
   .campos input,
   .campos select {
-    width: 100%;
-    padding: 0.8rem; /* Reducir el padding para disminuir el tamaño */
+    width: 80%; /* Reducir el ancho para ocupar menos espacio horizontal */
+    padding: 0.6rem; /* Reducir el padding para disminuir el tamaño */
     box-sizing: border-box;
     font-size: 0.9em; /* Reducir el tamaño de la fuente */
     border-radius: 16px; /* Reducir el radio del borde */
     border: 1px solid #ccc;
-    margin-bottom: 0.5rem; /* Agrega margen inferior para separar los campos verticalmente */
+    margin-bottom: 0.3rem; /* Reducir el margen inferior para reducir la separación vertical */
   }
   
   .button-group {
@@ -109,6 +109,7 @@ h2{
     background-color: var(--pink-color);
     color: rgb(0, 0, 0);
   }
+  
   
   
   
