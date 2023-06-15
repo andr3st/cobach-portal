@@ -42,27 +42,34 @@
     color: rgb(255, 255, 255);
   }
 
-  #form-env{
+  #form-env {
     padding: 1rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
     color: black;
   }
-
+  
   .campos {
-    margin-right: 48rem;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
     box-sizing: border-box;
     background-color: var(--purple-light-color);
-    border-radius: 2rem; /* Redondeado del contenedor morado */
-    padding: 1rem; /* Agregar esta línea para dar un poco de espacio entre el borde redondeado y el contenido del formulario */
+    border-radius: 2rem;
+    padding: 1rem;
   }
   
-
+  .campos > div {
+    flex-basis: 48%;
+  }
   
-  .campos input, .campos select {
-    width: 90%;
+  .campos label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .campos input,
+  .campos select {
+    width: 100%;
     padding: 1rem;
     box-sizing: border-box;
     font-size: 1em;
@@ -72,17 +79,17 @@
   
   .button-group {
     display: flex;
-    justify-content: left;
-    padding-right: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
   }
   
   .button-group button,
   .button-group a.button {
-    margin-right: 3rem  ;
+    margin-right: 1rem;
   }
   
   .button {
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1em;
     color: #fff;
     background-color: var(--blue-color);
@@ -93,10 +100,11 @@
     text-decoration: none;
   }
   
-  .campos .button:hover {
+  .button:hover {
     background-color: var(--pink-color);
     color: rgb(0, 0, 0);
   }
+  
 
   .contenedor {
     display: flex; /* Hace que los hijos del contenedor (el menú y el contenido) se dispogan en línea */
