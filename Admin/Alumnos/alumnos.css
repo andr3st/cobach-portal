@@ -88,7 +88,7 @@
   }
   
   .campos #pass {
-    width: 70%; /* Ajustar el ancho del campo de contraseña */
+    width: 50%; /* Ajustar el ancho del campo de contraseña */
   }
   
   .button-group {
