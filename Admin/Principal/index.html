@@ -115,43 +115,6 @@
     </div>
   </nav>
 
-  <!-- Principal
-  <div class="landing-page">
-    <div class="announcement-board">
-      <h2>¡Bienvenidos!</h2>
-      <p>¡Descubre las últimas noticias y eventos en nuestra escuela!</p>
-      <ul>
-        <li>Anuncio 1</li>
-        <li>Anuncio 2</li>
-        <li>Anuncio 3</li>
-      </ul>
-    </div>
-    <div class="image-gallery">
-      <h2>Galería de imágenes</h2>
-      <div class="image-container">
-        <img src="trioPRO.jpg" alt="Imagen 1">
-        <img src="trioPRO.jpg" alt="Imagen 2">
-        <img src="trioPRO.jpg" alt="Imagen 3">
-      </div>
-    </div>
-    <div class="event-section">
-      <h2>Próximos eventos</h2>
-      <div class="event">
-        <h3>Evento 1</h3>
-        <p>Fecha: 10 de julio</p>
-      </div>
-      <div class="event">
-        <h3>Evento 2</h3>
-        <p>Fecha: 15 de julio</p>
-      </div>
-      <div class="event">
-        <h3>Evento 3</h3>
-        <p>Fecha: 20 de julio</p>
-      </div>
-    </div>
-  </div> -->
-  
-
 
   <!-- Fin Menú -->
 
@@ -180,17 +143,15 @@
       <form id="form-env">
 
         <div class="contenedor-campos">
-
           <div class="campos">
-
-              <div>
-                <label for="Aviso">Aviso:</label>
-                <input type="text" id="Aviso" required placeholder="Aviso corto"><br><br>
-
-                <label for="Descripcion">Descripcion:</label>
-                <input type="text" id="Descripcion" required placeholder="Descripcion amplia"><br><br>
+            <div>
+              <label for="Aviso">Aviso:</label>
+              <input type="text" id="Aviso" required placeholder="Aviso corto"><br><br>
+        
+              <label for="Descripcion">Descripcion:</label>
+              <input type="text" id="Descripcion" required placeholder="Descripcion amplia"><br><br>
             </div>
-
+        
             <div>
               <label for="Grupos">Grupos:</label>
               <input type="text" id="Grupos" required placeholder="Número de grupo"><br><br>
@@ -198,15 +159,15 @@
               <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
             </div>
 
-
+            <div class="button-group">
+              <button type="submit" class="button">Enviar</button>
+              <a href="/Admin/Principal/index.html#form-env" class="button">Actualizar datos</a>
+            </div>
+       
           </div>
-
-              <div class="button-group">
-                <button type="submit" class="button">Enviar</button>
-                <a href="/Admin/Principal/index.html#form-env" class="button">Actualizar datos</a>
-              </div>
-
+        
         </div>
+        
 
         <h1><br><br>Avisos<br><br></h1>
         <table id="avisosTable">
@@ -247,13 +208,15 @@
               <input type="text" id="Fecha" required placeholder="DD/M/YYYY"><br><br>
             </div>
 
+            <div class="button-group">
+              <button type="submit" class="button">Enviar</button>
+              <a href="/Admin/Principal/index.html#form-envE" class="button">Actualizar tabla</a>
+            </div>
+
 
           </div>
 
-              <div class="button-group">
-                <button type="submit" class="button">Enviar</button>
-                <a href="/Admin/Principal/index.html#form-envE" class="button">Actualizar tabla</a>
-              </div>
+              
 
         </div>
 

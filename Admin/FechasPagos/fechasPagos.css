@@ -39,8 +39,6 @@ h2{
 #nominaTable td, #pagoATable th, #pagoATable td {
   border: 1px solid black;
   padding: 16px;
-  background-color: var(--purple-color);
-
 }
 
 .div-principal {
@@ -145,6 +143,17 @@ h2{
   }
 
   #nominaTable {
+    margin: 50px;
+  }
+
+  #pagoATable th{
+    border: 1px solid black;
+    padding: 16px; /* Cambia este valor para modificar el espacio dentro de las celdas */
+    background-color: var(--blue-color);
+    
+  }
+
+  #pagoATable {
     margin: 50px;
   }
   

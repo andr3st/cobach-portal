@@ -55,12 +55,12 @@ body {
   background-color: var(--purple-color);
 }
 
-#form-env{
-display: block;
-flex-direction: column;
-padding: 1rem;
-margin-bottom: 3rem;   
-color: rgb(255, 255, 255);
+#form-env {
+  display: block;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 3rem;   
+  color: rgb(255, 255, 255);
 }
 
 #form-envE{
@@ -71,73 +71,74 @@ color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
   }
 
-.contenedor-campos{
-  display: flex;
-  flex-direction: column;
-}
-
-.contenedor-campos .button-group{
-  margin-left: 10%;
-}
-
-.campos {
-margin-right: 48rem;
-margin-bottom: 2rem;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-box-sizing: border-box;
-background-color: var(--purple-light-color);
-border-radius: 2rem; /* Redondeado del contenedor morado */
-padding: 1rem; /* Agregar esta línea para dar un poco de espacio entre el borde redondeado y el contenido del formulario */
-}
-
-.campos label {
-font-size: 1.2em;
-margin-bottom: 5px;
-}
-
-.campos input, .campos select {
-width: 90%;
-padding: 1rem;
-box-sizing: border-box;
-font-size: 1em;
-border-radius: 10rem;
-border: 1px solid #ccc;
-}
-
-.button-group {
-display: flex;
-justify-content: left;
-padding-right: 1rem;
-}
-
-.button-group button,
-.button-group a.button {
-margin-right: 3rem;
-}
-
-.button {
-  padding: .5rem 1rem;
-  font-size: 1em;
-color: #fff;
-background-color: var(--blue-color);
-border: none;
-border-radius: 4px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-text-decoration: none;
-}
-
-.button:hover {
-  background-color: var(--pink-color);
-  color: rgb(0, 0, 0);
-}
-
-.contenedor {
-display: flex; /* Hace que los hijos del contenedor (el menú y el contenido) se dispogan en línea */
-}
-
+  .contenedor-campos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Centrar los campos y el grupo de botones verticalmente */
+  }
+  
+  .campos {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los campos se envuelvan a una nueva línea si no hay suficiente espacio horizontal */
+    justify-content: space-between; /* Distribuir los campos uniformemente en el contenedor */
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    background-color: var(--purple-light-color);
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+  
+  .campos > div {
+    flex-basis: 48%; /* Establecer el ancho de cada sección de campos */
+  }
+  
+  .campos label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .campos input,
+  .campos select {
+    width: 100%; /* Establecer el ancho de los campos al 100% para que ocupen todo el espacio disponible */
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1em;
+    border-radius: 10rem;
+    border: 1px solid #ccc;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; 
+  }
+  
+  .button-group button,
+  .button-group a.button {
+    margin-right: 1rem; /* Reducir el espacio entre los botones */
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    color: #fff;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: var(--pink-color);
+    color: rgb(0, 0, 0);
+  }
+  
+  .contenedor {
+    display: flex;
+  }
+  
 
 .sidebar.close {
 padding: 60px 0;
