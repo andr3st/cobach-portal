@@ -67,7 +67,8 @@
     margin-bottom: 5px;
   }
   
-  .campos input,
+  .campos input[type="text"],
+  .campos input[type="email"],
   .campos select {
     width: 100%;
     padding: 1rem;
@@ -75,6 +76,19 @@
     font-size: 1em;
     border-radius: 10rem;
     border: 1px solid #ccc;
+  }
+  
+  .campos #semestre,
+  .campos #Estatus {
+    width: 35%; /* Ajustar el ancho de los campos más cortos */
+  }
+  
+  .campos #semestre {
+    text-align: center; /* Centrar el contenido del campo de semestre */
+  }
+  
+  .campos #pass {
+    width: 70%; /* Ajustar el ancho del campo de contraseña */
   }
   
   .button-group {
@@ -104,6 +118,9 @@
     background-color: var(--pink-color);
     color: rgb(0, 0, 0);
   }
+  
+  
+  
   
 
   .contenedor {
