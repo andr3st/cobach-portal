@@ -145,8 +145,7 @@ h2{
   }
 
   .tabla-title{
-    font-size: xx-large;
-    color: white;
+    font-size: x-large;
   }
   
 
@@ -161,6 +160,15 @@ h2{
   #nominaTable {
     margin: 50px;
   }
+
+  .titulo-nominas,
+  .titulo-pago-alumno,
+  .titulo-alumnos {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
 
   #pagoATable th{
     border: 1px solid black;
