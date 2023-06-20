@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/20aba9cf20.js" crossorigin="anonymous"></script>
-    
-    <title>Principal</title>
-    <link rel="stylesheet" href="/Alumnos/Menu/menu.css">
+    <link rel="stylesheet" href="/Admin/Menu/menu.css">
+    <link rel="stylesheet" href="/Admin/Principal/index.css">
+
 </head>
 <body>
 
-    <!-- Header -->
+  <!-- Header -->
   <header id="header">
     <h1 class="letra-cobach">COBACH</h1>
     <div>
@@ -20,6 +21,8 @@
     </div>
   </header>
   
+
+
 
   <!-- Menu -->
   <div class="menu">
@@ -125,9 +128,57 @@
   </div>
   <!-- Fin Menú -->
 
+  <div class="slider">
+    <ul>
+        <li>
+            <img src="/Admin/Principal/images/image1.jpg" title="Gran involucramiento entre alumnos y profesores">
+        </li>
+        <li>
+            <img src="/Admin/Principal/images/image2.jpg" title="Cultura del deporte">
+        </li>
+        <li>
+            <img src="/Admin/Principal/images/image3.jpg" title="Participación del alumnado">
+        </li>
+        <li>
+            <img src="/Admin/Principal/images/image4.jpg" title="Ambiente de respeto y solidaridad">
+        </li>
+    </ul>
+</div>
 
+<div class="content">
+  <div class="info">
+    <!-- Aviso -->
+        <h2>Avisos:</h2> <br>
+        <table id="avisosTable">
+          <thead>
+            <tr>
+              <th>Aviso</th>
+              <th>Descripcion</th>
+              <th>Grupos</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+
+      <!-- Eventos -->
+        <h2>Eventos:</h2> <br>
+        <table id="eventosTable">
+          <thead>
+            <tr>
+              <th>Evento</th>
+              <th>Descripcion</th>
+              <th>Lugar</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+  </div>
+</div>
 
   <script src="/Alumnos/Menu/menu.js"></script>
-    
+  <script src="/Alumnos/Principal/principal.js"></script>
 </body>
 </html>

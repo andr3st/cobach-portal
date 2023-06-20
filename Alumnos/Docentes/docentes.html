@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" scontent="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/20aba9cf20.js" crossorigin="anonymous"></script>
-    <title>Docentes</title>
-    <link rel="stylesheet" href="/Alumnos/Menu/menu.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/20aba9cf20.js" crossorigin="anonymous"></script>
+  <title>Docentes</title>
+  <link rel="stylesheet" href="/Admin/Menu/menu.css">
+  <link rel="stylesheet" href="/Admin/Docentes/docentes.css">
 </head>
 <body>
-
-    <!-- Header -->
+  <!-- Header -->
   <header id="header">
     <h1 class="letra-cobach">COBACH</h1>
     <div>
       <img class='logo-cobach' src="/logins/images/logo.png" alt="cobach">
     </div>
   </header>
-  
 
   <!-- Menu -->
   <div class="menu">
@@ -124,11 +123,28 @@
   </div>
   <!-- Fin Menú -->
 
+  <div class="content">
 
-  <h1>Docentes</h1>
+    <div class="div-principal">
+      <h2 class="tabla-title">Tabla docentes<br><br></h2>
 
+      <table id="docentesTable">
+        <thead>
+          <tr>
+            <th>Expediente</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Materias</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
 
   <script src="/Alumnos/Menu/menu.js"></script>
-    
+  <script src="/Alumnos/Docentes/docentes.js" type="module"></script>
 </body>
 </html>
